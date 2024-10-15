@@ -1,1 +1,3 @@
-# stein-variational-gradient-descent
+# Stein Variational Gradient Descent
+
+![](./imgs/algorithm.png)
