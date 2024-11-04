@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
     # SVGD 업데이트
     loss_log = []
-    for iteration in tqdm(range(2000)):
+    for iteration in tqdm(range(3)):
         # SVGD 업데이트
         x_svgd = svgd.update(x_svgd, model.calculate_lnprob, iteration=1, stepsize=0.01)
 

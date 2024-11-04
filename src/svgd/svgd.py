@@ -43,7 +43,7 @@ class SVGD:
             gradient_rbf_kernel[:, i] = gradient_rbf_kernel[:, i] + np.multiply(particle_set[:, i], kernel_sums)
         gradient_rbf_kernel = gradient_rbf_kernel / (bandwidth ** 2)
 
-        # gradient for particle set
+        # *** gradient for particle set ***
         gradient_particle_set = (np.matmul(rbf_kernel, lnprob) + gradient_rbf_kernel) / particle_set.shape[0]
 
         return gradient_particle_set
